@@ -171,8 +171,7 @@ fun TomAccount() {
 
                 Column(
                     Modifier
-                        .fillMaxHeight()
-
+                        .fillMaxHeight().weight(1f)
                 ) {
                     EmoCard(
                         R.drawable.deveil_icon, "2M 12K", "No. of quarrels", Color(0xFFD0E5F0)
@@ -187,8 +186,7 @@ fun TomAccount() {
                 Column(
                     Modifier
                         .fillMaxHeight()
-
-
+                        .weight(1f)
                 ) {
                     EmoCard(
                         R.drawable.run_icon, "+500 h", "Chase time", Color(0xFFDEEECD)
@@ -336,7 +334,7 @@ fun EmoCard(img: Int, title: String, description: String, backGroundColor: Color
 
             )
         Spacer(Modifier.width(10.dp))
-        Column(Modifier.width(88.dp)) {
+        Column(Modifier.fillMaxWidth()) {
             Text(
                 title,
                 fontFamily = ibmPlexSemiBold,
@@ -345,14 +343,15 @@ fun EmoCard(img: Int, title: String, description: String, backGroundColor: Color
                 color = Color(0x99121212),
                 lineHeight = 16.sp,
                 letterSpacing = 0.sp
+
             )
             Text(
                 description,
                 fontFamily = ibmPlexMedium,
-                fontSize = 10.sp,
+                fontSize = 12.sp,
                 fontWeight = FontWeight(500),
                 color = Color(0x5E121212),
-                lineHeight = 10.sp,
+                lineHeight = 12.sp,
                 letterSpacing = 0.5.sp,
                 textAlign = TextAlign.Start,
                 minLines = 1
