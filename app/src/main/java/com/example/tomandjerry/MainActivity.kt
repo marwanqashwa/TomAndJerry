@@ -6,6 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.tomandjerry.screens.JerryStore
+import com.example.tomandjerry.screens.TomAccount
 import com.example.tomandjerry.ui.theme.TomAndJerryTheme
 
 class MainActivity : ComponentActivity() {
@@ -13,7 +14,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             TomAndJerryTheme {
-                JerryStore()
+               TomAccount()
             }
         }
     }

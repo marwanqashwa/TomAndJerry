@@ -2,7 +2,6 @@ package com.example.tomandjerry.ui.theme
 
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
-import androidx.compose.ui.text.font.FontWeight
 import com.example.tomandjerry.R
 
 val ibmPlex= FontFamily(
@@ -10,4 +9,10 @@ val ibmPlex= FontFamily(
 )
 val ibmPlexBold= FontFamily(
     Font(R.font.ipm_plex_bold)
+)
+val ibmPlexSemiBold= FontFamily(
+    Font(R.font.ibm_plex_semi_bold)
+)
+val ibmPlexMedium= FontFamily(
+    Font(R.font.ibm_plex_medium)
 )
