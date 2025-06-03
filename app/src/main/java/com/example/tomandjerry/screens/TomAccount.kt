@@ -30,6 +30,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewScreenSizes
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.tomandjerry.R
@@ -349,10 +350,10 @@ fun EmoCard(img: Int, title: String, description: String, backGroundColor: Color
             Text(
                 description,
                 fontFamily = ibmPlexMedium,
-                fontSize = 11.sp,
+                fontSize = 10.sp,
                 fontWeight = FontWeight(500),
                 color = Color(0x5E121212),
-                lineHeight = 11.sp,
+                lineHeight = 10.sp,
                 letterSpacing = 0.5.sp,
                 textAlign = TextAlign.Start,
                 minLines = 1
@@ -363,7 +364,7 @@ fun EmoCard(img: Int, title: String, description: String, backGroundColor: Color
 }
 
 
-@Preview(device = Devices.PIXEL_6_PRO, showSystemUi = true)
+@PreviewScreenSizes
 @Composable
 fun TomAccountPreview() {
     TomAccount()
