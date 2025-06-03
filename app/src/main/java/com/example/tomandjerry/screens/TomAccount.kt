@@ -172,7 +172,7 @@ fun TomAccount() {
                 Column(
                     Modifier
                         .fillMaxHeight()
-                        .weight(1f)
+
                 ) {
                     EmoCard(
                         R.drawable.deveil_icon, "2M 12K", "No. of quarrels", Color(0xFFD0E5F0)
@@ -187,8 +187,7 @@ fun TomAccount() {
                 Column(
                     Modifier
                         .fillMaxHeight()
-                        .width(160.dp)
-                        .weight(1f)
+
 
                 ) {
                     EmoCard(
