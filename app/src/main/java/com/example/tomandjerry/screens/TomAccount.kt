@@ -28,8 +28,6 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.tooling.preview.Devices
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.tooling.preview.PreviewScreenSizes
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -171,7 +169,8 @@ fun TomAccount() {
 
                 Column(
                     Modifier
-                        .fillMaxHeight().weight(1f)
+                        .fillMaxHeight()
+                        .weight(1f)
                 ) {
                     EmoCard(
                         R.drawable.deveil_icon, "2M 12K", "No. of quarrels", Color(0xFFD0E5F0)
@@ -210,7 +209,8 @@ fun TomAccount() {
                     Modifier
                         .height(182.dp)
                         .fillMaxWidth()
-                        .padding(horizontal = 16.dp)) {
+                        .padding(horizontal = 16.dp)
+                ) {
                     Text(
                         "Tom settings",
                         fontFamily = ibmPlexBold,
@@ -241,7 +241,8 @@ fun TomAccount() {
                     Modifier
                         .height(182.dp)
                         .fillMaxWidth()
-                        .padding(horizontal = 16.dp)) {
+                        .padding(horizontal = 16.dp)
+                ) {
                     Text(
                         "His favorite foods",
                         fontFamily = ibmPlexBold,
