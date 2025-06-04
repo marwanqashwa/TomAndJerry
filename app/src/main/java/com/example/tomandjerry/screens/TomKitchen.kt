@@ -16,6 +16,7 @@ import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Icon
@@ -52,7 +53,7 @@ fun TomKitchen() {
             modifier = Modifier
                 .fillMaxSize()
                 .padding(innerPadding)
-                .verticalScroll(state = ScrollState(0), enabled = true)
+                .verticalScroll(state = rememberScrollState(), enabled = true)
                 .background(Color(0xFFEEF4F6))
         ) {
             Box(
@@ -64,9 +65,8 @@ fun TomKitchen() {
                 Image(
                     painter = painterResource(R.drawable.back_ground_tom_kitchen),
                     null,
-                    Modifier
+                    Modifier.scale(1.12f)
                         .fillMaxSize()
-                        .scale(1.12f)
                         .clipToBounds(),
                     contentScale = ContentScale.Crop
                 )
@@ -117,7 +117,7 @@ fun TomKitchen() {
                 Column(
                     Modifier
                         .fillMaxWidth()
-                        .height(3000.dp)
+                        .height(2000.dp)
                         .offset(y = (-30).dp)
                         .clip(RoundedCornerShape(16.dp))
                         .background(Color(0xFFEEF4F6))
@@ -275,7 +275,7 @@ fun TomKitchen() {
 private fun TomKitchenBottomBar() {
     Box(
         Modifier
-            .height(responsiveDp(360, 72))
+            .height(responsiveDp(360, 86))
             .fillMaxWidth()
             .padding(horizontal = 16.dp, vertical = 15.dp)
             .clip(RoundedCornerShape(16.dp))
