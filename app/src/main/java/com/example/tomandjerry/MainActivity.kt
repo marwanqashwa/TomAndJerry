@@ -24,7 +24,7 @@ class MainActivity : ComponentActivity() {
 @Preview
 @Composable
 fun PrevText() {
-    JerryStore()
+TomKitchen()
 }
 
 
